@@ -24,9 +24,9 @@ export default function DashboardPage() {
     .filter(t => t.type === 'INCOME')
     .reduce((sum, t) => sum + t.amount, 0);
     
-  const totalExpenses = transactions
-    .filter(t => t.type === 'EXPENSE')
-    .reduce((sum, t) => sum + t.amount, 0);
+  //const totalExpenses = transactions
+    //.filter(t => t.type === 'EXPENSE')
+    //.reduce((sum, t) => sum + t.amount, 0);
     
   const totalProfit = transactions
     .filter(t => t.type === 'INCOME')
